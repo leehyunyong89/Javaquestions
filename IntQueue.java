@@ -71,28 +71,25 @@ public class IntQueue {
 			}
 			
 			
+			// 큐의 데이터를 출력한다.
+			public void printCQ()
+			{
+				if (num <= 0) 
+					System.out.println("큐가 비어 있습니다.");
+				else {
+					for (int i = 0; i < num; i++) {
+						System.out.println(que[(i + front) % num] + " ");
+					  System.out.println();	
+					}
+				}		
+			}
+			
+			
 	
 }
 
 
-			/*
-			 * 실행 예시 
-			 * IntQueue iq1 = new IntQueue();
-			 * 
-			 * iq1.enque(100); 
-			 * iq1.enque(200); 
-			 * iq1.enque(300); 
-			 * iq1.enque(400); 
-			 * iq1.enque(500);
-			 * 
-			 *  
-			 * iq1.deque(); 
-			 * iq1.deque();
-			 * iq1.deque();
-			 * iq1.deque();
-			 * iq1.deque();
-			 * iq1.deque();
-			 */
+			
 
 
 
